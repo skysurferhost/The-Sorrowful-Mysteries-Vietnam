@@ -792,3 +792,41 @@ body.view-control-buttons .viewControlButton { display: block; }
 .viewControlButton-4 { margin-left: 5px; }
 .viewControlButton-5 { margin-left: 55px; }
 .viewControlButton-6 { margin-left: 105px; }
+
+/* ✅ MOBILE FIX: true vertical + horizontal centering for 1-line titles
+   (and still allows up to 2 lines without breaking centering) */
+@media (max-width: 768px) {
+
+  /* keep title bar aligned with buttons */
+  .mobile #titleBar {
+    height: 50px;
+    right: 50px;
+  }
+
+  .mobile #titleBar .sceneName {
+    /* override clamp layout that breaks centering */
+    display: flex !important;
+    -webkit-box-orient: initial !important;
+    -webkit-line-clamp: unset !important;
+
+    align-items: center !important;      /* vertical center ✅ */
+    justify-content: center !important;  /* horizontal center ✅ */
+    text-align: center !important;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 6px 10px !important;
+    line-height: 1.2 !important;
+
+    /* allow wrapping, but don't cut mid-word */
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: anywhere !important;
+
+    /* limit to ~2 lines while still centered */
+    overflow: hidden !important;
+    max-height: calc(1.2em * 2 + 2px) !important;
+  }
+}
+
