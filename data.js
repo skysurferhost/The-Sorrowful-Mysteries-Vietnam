@@ -5,25 +5,25 @@ var APP_DATA = {
       "name": "1. Đức Chúa Giêsu Lo Buồn Đổ Mồ Hôi Máu",
       "levels": [
         {
-          "tileSize": 356,
-          "size": 356,
+          "tileSize": 256,
+          "size": 256,
           "fallbackOnly": true
         },
         {
-          "tileSize": 612,
-          "size": 612
+          "tileSize": 512,
+          "size": 512
         },
         {
-          "tileSize": 612,
-          "size": 1124
+          "tileSize": 512,
+          "size": 1024
         },
         {
-          "tileSize": 612,
-          "size": 2148
+          "tileSize": 512,
+          "size": 2048
         },
         {
-          "tileSize": 612,
-          "size": 4196
+          "tileSize": 512,
+          "size": 4096
         }
       ],
       "faceSize": 4096,
