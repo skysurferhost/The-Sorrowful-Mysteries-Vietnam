@@ -80,7 +80,7 @@ body.multiple-scenes.mobile #titleBar {
   line-height: 30px;
   padding: 5px;
   font-size: 24px;        /* 🔥 make bigger */
-  font-weight: 300;       /* optional: stronger */
+  font-weight: 600;       /* optional: stronger */
   background-color: rgb(58,68,84);
   background-color: rgba(58,68,84,0.8);
   overflow: hidden;
