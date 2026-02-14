@@ -2,28 +2,28 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-1-c-cha-gisu-lo-bun--m-hi-mu",
-      "name": "<p class=\"MsoNormal\"><span style=\"font-size: 13pt; line-height: 115%;\">1. Đức Chúa Giêsu Lo Buồn Đổ Mồ Hôi Máu</span><o:p></o:p></p>",
+      "name": "1. Đức Chúa Giêsu Lo Buồn Đổ Mồ Hôi Máu",
       "levels": [
         {
-          "tileSize": 256,
-          "size": 256,
+          "tileSize": 356,
+          "size": 356,
           "fallbackOnly": true
         },
         {
-          "tileSize": 512,
-          "size": 512
+          "tileSize": 612,
+          "size": 612
         },
         {
-          "tileSize": 512,
-          "size": 1024
+          "tileSize": 612,
+          "size": 1124
         },
         {
-          "tileSize": 512,
-          "size": 2048
+          "tileSize": 612,
+          "size": 2148
         },
         {
-          "tileSize": 512,
-          "size": 4096
+          "tileSize": 612,
+          "size": 4196
         }
       ],
       "faceSize": 4096,
