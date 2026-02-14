@@ -84,7 +84,7 @@ body.multiple-scenes.mobile #titleBar {
   padding: 6px 10px;
 
   font-size: clamp(14px, 2.2vw, 22px);
-  font-weight: 300;
+  font-weight: 10;
   line-height: 1.15;
 
   background-color: rgba(58,68,84,0.8);
