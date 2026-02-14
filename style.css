@@ -79,7 +79,7 @@ body.multiple-scenes.mobile #titleBar {
 
 /* ✅ Scene title: auto-wrap (2 lines), responsive scaling, no ellipsis */
 #titleBar .sceneName {
-  width: 80%;
+  width: 100%;
   height: 100%;
   padding: 6px 10px;
 
@@ -107,8 +107,8 @@ body.multiple-scenes.mobile #titleBar {
 /* Mobile: keep title bar short and aligned, so show 1 line */
 .mobile #titleBar .sceneName {
   padding: 6px 10px;
-  -webkit-line-clamp: 1;   /* ✅ align height with buttons */
-  line-clamp: 1;
+  -webkit-line-clamp: 2;   /* ✅ align height with buttons */
+  line-clamp: 2;
 }
 
   -moz-user-select: text;
