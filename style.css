@@ -805,7 +805,7 @@ body.view-control-buttons .viewControlButton { display: block; }
 
   /* keep title bar aligned with buttons */
   .mobile #titleBar {
-    height: 50px;
+    height: 60px;
     right: 50px;
   }
 
