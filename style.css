@@ -1,4 +1,4 @@
-/* COPY/REPLACE ENTIRE CSS (fixed + auto-wrap scene title + beautiful mobile scaling) */
+/* style.css — FULL COPY/REPLACE (fixed + title auto-wrap + centered when 1 line) */
 
 * {
   -webkit-box-sizing: border-box;
@@ -53,9 +53,8 @@ a, a:hover, a:active, a:visited {
   text-align: center;
 }
 
-/* ✅ Give mobile more height so 2-line title fits nicely */
 .mobile #titleBar {
-  height: 50px;   /* align with buttons */
+  height: 50px; /* align with buttons on mobile */
   right: 50px;
 }
 
@@ -77,49 +76,44 @@ body.multiple-scenes.mobile #titleBar {
   left: 50px;
 }
 
-/* ✅ Scene title: auto-wrap (2 lines), responsive scaling, no ellipsis */
+/* ✅ Scene title: auto-wrap (max 2 lines) + centered when 1 line */
 #titleBar .sceneName {
   width: 100%;
   height: 100%;
-  padding: 6px 10px;
+  padding: 6px 12px;
 
   font-size: clamp(14px, 2.2vw, 22px);
   font-weight: 300;
-  line-height: 1.15;
+  line-height: 1.2;
 
   background-color: rgba(58,68,84,0.8);
 
-  /* wrap + clamp */
+  /* Centering */
+  text-align: center;
+  display: -webkit-box;              /* enables line clamp */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;             /* max 2 lines */
+
+  /* Wrap behavior */
   white-space: normal;
+  word-break: break-word;
+
   overflow: hidden;
   text-overflow: unset;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;   /* desktop can show up to 2 lines */
-  line-clamp: 2;
 
   -moz-user-select: text;
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
+
+  /* Better vertical centering feel */
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
-/* Mobile: keep title bar short and aligned, so show 1 line */
-.mobile #titleBar .sceneName {
-  padding: 6px 10px;
-  -webkit-line-clamp: 2;   /* ✅ align height with buttons */
-  line-clamp: 2;
-}
-
-  -moz-user-select: text;
-  -webkit-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
-
-/* Mobile fine-tuning */
 .mobile #titleBar .sceneName {
   padding: 8px 10px;
+  -webkit-line-clamp: 2; /* keep 2 lines on mobile */
 }
 
 /* ---------- Fullscreen Toggle ---------- */
