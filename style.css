@@ -823,7 +823,7 @@ body.view-control-buttons .viewControlButton { display: block; }
     height: 100%;
 
     padding: 6px 10px !important;
-    line-height: 1.2 !important;
+    line-height: 1.5 !important;
 
     /* allow wrapping, but don't cut mid-word */
     white-space: normal !important;
@@ -832,5 +832,5 @@ body.view-control-buttons .viewControlButton { display: block; }
 
     /* limit to ~2 lines while still centered */
     overflow: hidden !important;
-    max-height: calc(1.2em * 2 + 2px) !important;
+    max-height: calc(1.5em * 2 + 2px) !important;
   }
