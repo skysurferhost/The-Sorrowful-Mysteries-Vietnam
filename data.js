@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-1-c-cha-gisu-lo-bun--m-hi-mu",
-      "name": "1. Đức Chúa Giêsu Lo Buồn Đổ Mồ Hôi Máu",
+      "name": "1. Đức Chúa Giê-su Lo Buồn Đổ Mồ Hôi Máu",
       "levels": [
         {
           "tileSize": 256,
@@ -51,7 +51,7 @@ var APP_DATA = {
     },
     {
       "id": "1-2-c-cha-gisu-chu-nh-n",
-      "name": "2. Đức Chúa Giêsu Chịu Đánh Đòn",
+      "name": "2. Đức Chúa Giê-su Chịu Đánh Đòn",
       "levels": [
         {
           "tileSize": 256,
@@ -106,7 +106,7 @@ var APP_DATA = {
     },
     {
       "id": "2-3-c-cha-gisu-chu-i-mo-gai",
-      "name": "3. Ðức Chúa Giêsu Chịu Ðội Mão Gai",
+      "name": "3. Ðức Chúa Giê-su Chịu Ðội Mão Gai",
       "levels": [
         {
           "tileSize": 256,
@@ -161,7 +161,7 @@ var APP_DATA = {
     },
     {
       "id": "3-4-c-cha-gisu-vc-cy-thnh-gi",
-      "name": "4. Ðức Chúa Giêsu Vác Cây Thánh Giá",
+      "name": "4. Ðức Chúa Giê-su Vác Cây Thánh Giá",
       "levels": [
         {
           "tileSize": 256,
@@ -216,7 +216,7 @@ var APP_DATA = {
     },
     {
       "id": "4-5-c-cha-gisu-chu-cht-trn-cy-thnh-gi",
-      "name": "5. Ðức Chúa Giêsu Chịu Chết Trên Cây Thánh Giá",
+      "name": "5. Ðức Chúa Giê-su Chịu Chết Trên Cây Thánh Giá",
       "levels": [
         {
           "tileSize": 256,
