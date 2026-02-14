@@ -16,8 +16,7 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap');
 
 html, body {
   width: 100%;
@@ -78,15 +77,9 @@ body.multiple-scenes.mobile #titleBar {
 }
 
 #titleBar .sceneName {
-  width: 100%;
-  height: 100%;
-  line-height: 30px;
-  padding: 5px;
-
-  font-family: 'Inter', sans-serif;  /* 🔥 new font */
-  font-weight: 600;                  /* medium bold */
-  letter-spacing: 0.3px;             /* subtle polish */
-
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+}
   background-color: rgb(58,68,84);
   background-color: rgba(58,68,84,0.8);
   overflow: hidden;
