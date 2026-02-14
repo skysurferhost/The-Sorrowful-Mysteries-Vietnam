@@ -23,14 +23,13 @@ html, body {
   margin: 0;
   overflow: hidden;
 
-  /* ✅ Makes desktop match iPhone-style font */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* ✅ Force same rendering everywhere */
+  font-family: "Noto Sans", "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 
   font-size: 16px;
   background-color: #000;
   color: #fff;
 }
-
 
 a, a:hover, a:active, a:visited {
   text-decoration: none;
@@ -55,13 +54,11 @@ a, a:hover, a:active, a:visited {
   text-align: center;
 }
 
-/* ✅ Give mobile more height so 2-line title fits nicely */
 .mobile #titleBar {
-  height: 50px;   /* align with buttons */
+  height: 50px;
   right: 50px;
 }
 
-/* If there is a fullscreen button the title bar must make space for it */
 body.fullscreen-enabled #titleBar {
   right: 80px;
 }
@@ -70,7 +67,6 @@ body.fullscreen-enabled.mobile #titleBar {
   right: 100px;
 }
 
-/* If there are multiple scenes the title bar must make space for the scene list toggle */
 body.multiple-scenes #titleBar {
   left: 40px;
 }
@@ -79,11 +75,13 @@ body.multiple-scenes.mobile #titleBar {
   left: 50px;
 }
 
-/* ✅ Scene title: auto-wrap (2 lines), responsive scaling, no ellipsis */
+/* ✅ Scene title */
 #titleBar .sceneName {
   width: 100%;
   height: 100%;
   padding: 6px 10px;
+
+  font-family: inherit;   /* ⭐ THIS FIXES THE FONT DIFFERENCE */
 
   font-size: clamp(14px, 2.2vw, 22px);
   font-weight: 300;
@@ -91,13 +89,12 @@ body.multiple-scenes.mobile #titleBar {
 
   background-color: rgba(58,68,84,0.8);
 
-  /* wrap + clamp */
   white-space: normal;
   overflow: hidden;
   text-overflow: unset;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;   /* desktop can show up to 2 lines */
+  -webkit-line-clamp: 2;
   line-clamp: 2;
 
   -moz-user-select: text;
@@ -105,6 +102,7 @@ body.multiple-scenes.mobile #titleBar {
   -ms-user-select: text;
   user-select: text;
 }
+
 
 /* Mobile: keep title bar short and aligned, so show 1 line */
 .mobile #titleBar .sceneName {
