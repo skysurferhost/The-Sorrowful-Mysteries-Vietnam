@@ -106,7 +106,7 @@ var APP_DATA = {
     },
     {
       "id": "2-3-c-cha-gisu-chu-i-mo-gai",
-      "name": "3. Ðức Chúa Giêsu Chịu Ðội Mạo Gai",
+      "name": "3. Ðức Chúa Giêsu Chịu Ðội Mão Gai",
       "levels": [
         {
           "tileSize": 256,
