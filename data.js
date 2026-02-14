@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-1-c-cha-gisu-lo-bun--m-hi-mu",
-      "name": "1. Đức Chúa Giêsu Lo Buồn Đổ Mồ Hôi Máu",
+      "name": "<p class=\"MsoNormal\"><span style=\"font-size: 13pt; line-height: 115%;\">1. Đức Chúa Giêsu Lo Buồn Đổ Mồ Hôi Máu</span><o:p></o:p></p>",
       "levels": [
         {
           "tileSize": 256,
