@@ -55,7 +55,7 @@ a, a:hover, a:active, a:visited {
 
 /* ✅ Give mobile more height so 2-line title fits nicely */
 .mobile #titleBar {
-  height: 64px;
+  height: 50px;
   right: 50px;
 }
 
