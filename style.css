@@ -79,7 +79,7 @@ body.multiple-scenes.mobile #titleBar {
 
 /* ✅ Scene title: auto-wrap (2 lines), responsive scaling, no ellipsis */
 #titleBar .sceneName {
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding: 6px 10px;
 
